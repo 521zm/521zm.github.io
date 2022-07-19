@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #61c0bf;
+    animation: bodyanimation 4s infinite;
+}
+
+@keyframes bodyanimation {
+    0% {
+        background-color: #61c0bf;
+    }
+
+    25% {
+        background-color: #61c0bf;
+    }
+
+    50% {
+        background-color: #fae3d9;
+    }
+
+    75% {
+        background-color: #ffb6b9;
+    }
+
+    100% {
+        background-color: #e0f9b5;
+    }
+}
+
+h1 {
+    position: absolute;
+    width: 800px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-400px);
+    animation: h2animation 4s infinite;
+    color: #14ffec;
+}
+
+@keyframes h2animation {
+    0% {
+        color: #14ffec;
+    }
+
+    25% {
+        color: #46cdcf;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    100% {
+        color: #00b8a9;
+    }
+}
+
+form {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin: 150px auto;
+    background: url(../images/form背景.jpg) no-repeat;
+    background-size: cover;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    transition: .5s;
+}
+
+form:hover {
+    transform: scale(1.2);
+}
+
+form>input {
+    position: absolute;
+    outline: none;
+    width: 200px;
+    height: 30px;
+    left: 50%;
+    transform: translateX(-100px);
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, .5);
+    font-weight: 600;
+}
+
+form>i {
+    position: absolute;
+    left: 75px;
+    color: red;
+}
+
+form>i:nth-child(1) {
+    top: 88px;
+}
+
+form>i:nth-child(4) {
+    top: 155px;
+}
+
+form>i:nth-child(7) {
+    left: 280px;
+    top: 157px;
+}
+
+form>input:nth-child(2) {
+    top: 80px;
+}
+
+form>input:nth-child(2):hover,
+form>input:nth-child(3):hover {
+    border-bottom: 1px solid #14ffec;
+}
+
+form>input:nth-child(3) {
+    top: 150px;
+}
+
+form>input:nth-child(5) {
+    cursor: pointer;
+    width: 60px;
+    top: 220px;
+    margin-left: 10px;
+    transition: 1s;
+}
+
+form>input:nth-child(5):hover {
+    color: blue;
+}
+
+form>a {
+    position: absolute;
+    display: block;
+    left: 230px;
+    top: 220px;
+    text-decoration: none;
+    color: black;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, .5);
+    font-weight: 600;
+    font-size: 14px;
+    transition: 1s;
+}
+
+form>a:hover {
+    color: blue;
+}
