@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>recard-screen</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3823748_7tzjew44f7e.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3824278_wgt83uqb1be.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-left">
+        <span class="iconfont icon-luping" id="fontSize"></span>
+        <span id="fontSize">PIAOPIAO</span>
+      </div>
+      <div class="header-right">
+        <span class="iconfont icon-shouye" id="fontSize"></span>
+      </div>
+    </div>
+    <div class="select">
+      <p>录制模式</p>
+      <div class="select-container">
+        <div class="selectAll select-1" id="person">
+          <span class="iconfont icon-renxiangcaiji"></span>
+          <p class="p-style">仅人像</p>
+        </div>
+        <div class="selectAll select-2" id="person-screen">
+          <span class="iconfont icon-renxiangcaiji"></span>
+          <span class="iconfont icon-luping" id="two"></span>
+          <p class="p-style">人像+屏幕</p>
+        </div>
+        <div class="selectAll select-3" id="screen">
+          <span class="iconfont icon-luping"></span>
+          <p class="p-style">仅屏幕</p>
+        </div>
+      </div>
+    </div>
+    <div class="intercalate">
+      <p>录制设置</p>
+      <div class="intercalate-container">
+        <div class="set">
+          <span class="h iconfont icon-shexiangtou_shiti" id="camera"></span>
+          <span class="w">Integrated Camera</span>
+        </div>
+        <div class="set">
+          <span class="h iconfont icon-yuyin-kai2" id="audio"></span>
+          <span class="w">AMD Audio Device</span>
+        </div>
+        <div class="set">
+          <span class="h iconfont icon-HD"></span>
+          <span class="w">1080P</span>
+        </div>
+      </div>
+    </div>
+    <div class="startRecard" id="startRecard">
+      开始录制
+    </div>
+  </div>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
