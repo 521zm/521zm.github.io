@@ -46,11 +46,33 @@ $(function () {
     }
   })
   const startRecard = document.querySelector('#startRecard')
+  const video = document.querySelector('#video')
+  const mask_three = document.querySelector('.mask-three')
+  const three = document.querySelector('.three')
   startRecard.addEventListener('click', async function () {
     let stream = await navigator.mediaDevices.getDisplayMedia({
       video: true,
     })
     let mediaRecorder = new MediaRecorder(stream);
+    //三秒后启动
+    setTimeout(() => {
+      mediaRecorder.start()
+    }, 3000);
+    // 蒙版
+    mask_three.className = 'mask-three-block'
+    // three三秒倒计时
+    let t = 2;
+    let timer = setInterval(function () {
+      three.innerHTML = t;
+      t--;
+      if (t < 0) {
+        clearInterval(timer);
+      }
+    }, 1000)
+    // 三秒后清空蒙版
+    setTimeout(() => {
+      mask_three.className = 'mask-three'
+    }, 3000);
     //录制
     let chunks = [];
     mediaRecorder.addEventListener('dataavailable', function (e) {
@@ -63,19 +85,22 @@ $(function () {
       });
       let url = URL.createObjectURL(blob);
       let a = document.createElement('a');
-      const name = new Date()
+      const name = "PIAOPIAO  " + new Date()
         .toISOString()
         .slice(0, 19)
         .replace('T', ' ')
         .replace(' ', '_')
         .replace(/:/g, '-')
       a.href = url
-      a.download = `${name}.mp4`
+      a.download = `${name}.webm`
+      video.src = url
+      video.className = 'view'
       a.click()
-      window.URL.revokeObjectURL(url)
-    })
-    //手动启动
-    mediaRecorder.start()
+      // window.URL.revokeObjectURL(url)
 
+    })
   });
+  document.body.addEventListener('click', function () {
+    video.className = ''
+  })
 });
