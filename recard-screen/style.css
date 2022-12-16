@@ -138,12 +138,7 @@ body {
 }
 
 video {
-  width: 750px;
-  position: absolute;
-  /* opacity: .4; */
   display: none;
-  z-index: 999;
-  margin-top: 100px;
 }
 
 .view {
@@ -186,4 +181,38 @@ video {
   font-size: 400px;
   text-align: center;
   line-height: 400px;
+}
+
+.stop {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #58b10f;
+  color: #eeeeee;
+  font-size: 20px;
+  border: none;
+  font-weight: 600;
+  margin-top: 250px;
+  margin-right: -600px;
+}
+
+/* 录制人像 */
+/* 打开摄像头 */
+.person {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin-left: -700px;
+}
+
+/* 关闭摄像头 */
+.person-none {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  display: none;
+  margin-left: -700px;
 }

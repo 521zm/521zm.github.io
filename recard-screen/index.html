@@ -61,15 +61,20 @@
       开始录制
     </div>
   </div>
-  <video src="" autoplay controls id="video"></video>
+  <video src="" autoplay controls id="video" style="width: 750px;position: absolute;
+  z-index: 999;
+  margin-top: 100px;"></video>
   <!-- 三秒蒙版 -->
   <div class="mask-three">
     <div class="mask">
       <div class="three">
-        3
+
       </div>
     </div>
   </div>
+  <button class="stop">停止</button>
+  <!-- 录像 -->
+  <video src="" class="person" autoplay id="personView"></video>
   <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.js"></script>
   <script src="main.js"></script>
 </body>
