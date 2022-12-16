@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#fontSize {
+  font-size: 20px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  user-select: none;
+}
+
+.container {
+  width: 350px;
+  height: 400px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+/* header */
+.header {
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+}
+
+.header .header-left {
+  float: left;
+}
+
+.header .header-right {
+  float: right;
+}
+
+/* select-container */
+.select-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+.select-container .selectAll {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border: 1px solid;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.select-container .selectAll span:nth-child(1) {
+  font-size: 60px;
+  display: block;
+  text-align: center;
+}
+
+#two {
+  font-size: 60px;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 45px;
+  transform: translateX(-30px);
+  opacity: .4;
+}
+
+.p-style {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background-color: #eff0f1;
+  text-align: center;
+  line-height: 30px;
+}
+
+.intercalate {
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+}
+
+.intercalate .intercalate-container {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.intercalate .intercalate-container .set {
+  width: 100%;
+  height: 35px;
+}
+
+.intercalate .intercalate-container .set .h {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  background-color: #e6ffd2;
+  border-radius: 10px;
+  font-size: 25px;
+  color: #58b10f;
+}
+
+.intercalate .intercalate-container .set .w {
+  display: inline-block;
+  background-color: aliceblue;
+  border: 2px solid gainsboro;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  width: 250px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.startRecard {
+  width: 100%;
+  height: 50px;
+  background-color: #58b10f;
+  color: aliceblue;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 800;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+video {
+  display: none;
+}
+
+/* 添加时录制视频出现 */
+.view {
+  display: block;
+}
+
+.mask-three {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee;
+  opacity: .2;
+  display: none;
+}
+
+/* 添加mask出现的类 */
+.mask-three-block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee;
+  opacity: .2;
+  display: block;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mask .three {
+  width: 400px;
+  height: 400px;
+  background-color: #393e46;
+  border-radius: 50%;
+  color: red;
+  font-size: 400px;
+  line-height: 400px;
+  text-align: center;
+}
+
+.stop {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  background-color: #58b10f;
+  color: #eeeeee;
+  font-weight: 600;
+  margin-top: 250px;
+  margin-right: -600px;
+}
+
+/* 录像 */
+/* 打开摄像头 */
+.person {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin-left: -700px;
+}
+
+/* 关闭摄像头 */
+.person-none {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  display: none;
+  margin-left: -700px;
+}
