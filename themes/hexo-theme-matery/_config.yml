@@ -73,7 +73,7 @@ cover:
 dream:
   enable: true
   showTitle: true
-  title: PIAOPIAO ❤ 张萌
+  title: LOVE
   text: 两人相爱时，渴求无限甜蜜的吻，但为何在争吵时，却要用接吻的嘴互相伤害呢？
 
 # Whether to display the musics.
@@ -630,8 +630,9 @@ subtitle:
   typeSpeed: 100 # 打字速度
   backSpeed: 50 # 删除速度
   sub:
-    - PIAOPIAO  LOVE  张萌
+    - LOVE 张萌
     - Love Zhang Meng forever until the end of time
+
 # 手机二级菜单.
 navMenu:
   mleft: false # 二级侧栏子菜单是否对齐左边
@@ -728,5 +729,5 @@ bbtime:
 mermaid: ## mermaid url https://github.com/knsv/mermaid
   enable: false # default false
   version: 'latest' # default v7.1.2
-  options:# find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
-    #startOnload: true  // default true
+  options: # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+  startOnload: true  // default true
