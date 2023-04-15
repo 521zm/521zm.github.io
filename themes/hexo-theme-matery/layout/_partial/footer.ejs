@@ -69,20 +69,17 @@
                     var diff = t2 - t1;
                     var diffYears = Math.floor(diff / years);
                     var diffDays = Math.floor((diff / days) - diffYears * 365);
-                    var diffHours = Math.floor((diff / hours) % 24);
-                    var diffMinutes = Math.floor((diff / minutes) % 60);
-                    var diffSeconds = Math.floor((diff / seconds) % 60);
                     // 区分是否有年份.
                     var language = '<%- config.language %>';
                     if (startYear === String(todayYear)) {
                         document.getElementById("year").innerHTML = todayYear;
                         var daysTip = 'This site has been running for ' + diffDays + ' days';
                         if (language === 'zh-CN') {
-                            daysTip = '本站已运行 ' + diffDays + ' 天' + diffHours + '小时' +
-                                diffMinutes + '分钟' + diffSeconds + '秒';
+                            daysTip = '本站已运行 ' + diffDays + ' 天' + todayHour + '小时' +
+                                todayMinute + '分钟' + todaySecond + '秒';
                         } else if (language === 'zh-HK') {
-                            daysTip = '本站已運行 ' + diffDays + ' 天' + diffHours + '小时' +
-                                diffMinutes + '分钟' + diffSeconds + '秒';
+                            daysTip = '本站已運行 ' + diffDays + ' 天' + todayHour + '小时' +
+                                todayMinute + '分钟' + todaySecond + '秒';
                         }
                         document.getElementById("sitetime").innerHTML = daysTip;
                     } else {
@@ -90,11 +87,11 @@
                         var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and ' +
                             diffDays + ' days';
                         if (language === 'zh-CN') {
-                            yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天' + diffHours + '小时' +
-                                diffMinutes + '分钟' + diffSeconds + '秒';
+                            yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天' + todayHour + '小时' +
+                                todayMinute + '分钟' + todaySecond + '秒';
                         } else if (language === 'zh-HK') {
-                            yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天' + diffHours + '小时' +
-                                diffMinutes + '分钟' + diffSeconds + '秒';
+                            yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天' + todayHour + '小时' +
+                                todayMinute + '分钟' + todaySecond + '秒';
                         }
                         document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
                     }
