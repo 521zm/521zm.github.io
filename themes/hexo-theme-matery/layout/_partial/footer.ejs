@@ -96,8 +96,9 @@
                         document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
                     }
                 }
-
-                setInterval(calcSiteTime(), 1000);
+                window.setInterval(function () {
+                    calcSiteTime()
+                }, 1000);
             </script>
             <% } %>
             <br>
